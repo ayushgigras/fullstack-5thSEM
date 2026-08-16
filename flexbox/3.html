@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f4f7fb;
+            --surface: #ffffff;
+            --text: #172033;
+            --muted: #5d6b86;
+            --accent: #2563eb;
+            --accent-soft: #dbeafe;
+            --border: #dce3ee;
+            --shadow: 0 18px 40px rgba(23, 32, 51, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+        }
+
+        .page h1 {
+            margin: 0 0 8px;
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+        }
+
+        .page p {
+            margin: 0 0 24px;
+            color: var(--muted);
+            max-width: 60ch;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .card {
+            flex: 1 1 260px;
+            max-width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .card__image {
+            height: 180px;
+            background: linear-gradient(135deg, #60a5fa 0%, #1d4ed8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .card__body {
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .card__title {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .card__desc {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        .card__meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border: 0;
+            border-radius: 12px;
+            padding: 12px 14px;
+            background: var(--accent);
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            filter: brightness(0.95);
+        }
+
+        @media (max-width: 720px) {
+            .page {
+                padding: 24px 16px 40px;
+            }
+
+            .products {
+                gap: 16px;
+            }
+
+            .card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <h1>Featured Products</h1>
+        <p>Responsive product cards built with flexbox. The cards wrap automatically and expand to fit the screen size.</p>
+
+        <section class="products">
+            <article class="card">
+                <div class="card__image">A</div>
+                <div class="card__body">
+                    <span class="badge">Best Seller</span>
+                    <h2 class="card__title">Aero Headphones</h2>
+                    <p class="card__desc">Wireless headphones with deep bass, long battery life, and soft ear cushions for daily use.</p>
+                    <div class="card__meta">
+                        <span class="price">$89</span>
+                        <button class="button">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">B</div>
+                <div class="card__body">
+                    <span class="badge">New</span>
+                    <h2 class="card__title">Urban Smartwatch</h2>
+                    <p class="card__desc">Track workouts, receive notifications, and monitor your day with a bright AMOLED display.</p>
+                    <div class="card__meta">
+                        <span class="price">$129</span>
+                        <button class="button">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">C</div>
+                <div class="card__body">
+                    <span class="badge">Popular</span>
+                    <h2 class="card__title">Nova Speaker</h2>
+                    <p class="card__desc">Compact Bluetooth speaker with crisp audio, punchy volume, and splash resistance.</p>
+                    <div class="card__meta">
+                        <span class="price">$59</span>
+                        <button class="button">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
