@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        /* *{
             margin: 0;
             padding: 0;
-        }
+        } */
 
         #myId{
             color:red;
@@ -30,6 +30,44 @@
         div>p{
             color: rgb(61, 153, 147);
         }
+        section h4{
+            color: brown;
+            text-shadow: 1px 1px 0 black;
+        }
+        section>h4{
+            text-transform: lowercase;
+        }
+        h4+p{
+            color:chocolate;
+        }
+        h4~p{
+            text-transform: uppercase;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        button:active{
+            background-color: red;
+            color: white;
+        }
+        a:link{
+            color: pink;
+            text-decoration: none;
+        }
+        a:visited{
+            color: greenyellow;
+        }
+        input:checked{
+            accent-color: magenta;
+            box-shadow: 1px 1px 5px black;
+        }
+        li:nth-child(odd){
+            background-color: bisque;
+        }
+        li:nth-child(even){
+            background-color: cyan;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +76,18 @@
         <p>paragraph 1</p>
         <p>paragraph 2</p>
     </div>
+    <br>
+    <br>
+    <section>
+        <h4>heading</h4>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+    </section>
+    <br>
+    <br>
     <h2>SELECTORS</h2>
+    <br>
+    <br>
     <UL>
         <li class="myclass">Universal<span>123</span></li>
         <li id="myId">ID</li>
@@ -49,7 +98,19 @@
         <li>Pseudo Class</li>
         <li>Pseudo Elements</li>
     </UL>
+    <br>
+    <br>
     <input type="email" placeholder="Email" name="email" required><br>
     <input type="password" placeholder="Password" name="password" required>
+    <br>
+    <br>
+    <button>CLICK ME!!</button>
+    <br>
+    <br>
+    <a href="https://fast.com">LINK</a>
+    <br>
+    <br>
+    <input type="checkbox" checked/>
+    <input type="checkbox"/>
 </body>
 </html>
