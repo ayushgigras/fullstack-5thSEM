@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border-width: 0px 0px 2px 0px;
+            border-color: #ccc;
+            display: block;
+            margin: 2%;
+            font-size: 20px;
+        }
+        input:required {
+            border-color: red;
+        }
+        input:optional {
+            border-color: green;
+        }
+        input:enabled {
+            background-color: transparent;
+            box-shadow: 0px 0px 5px black;
+        }
+        input:disabled {
+            background-color: #ccc;
+            box-shadow: 0px 0px 0px black;
+        }
+        input:valid {
+            background-color: rgb(49, 231, 49);
+        }
+       input:invalid {
+            background-color: rgb(178, 66, 66);
+        }
+        input:in-range {
+            background-color: rgb(49, 225, 231);
+        }
+        input:out-of-range {
+            background-color: rgb(167, 178, 66);
+        }
+        input:placeholder-shown{
+            outline: 2px solid #000;
+        }
+        input:read-only{
+           border-width: 0px;
+           box-shadow: 0 0 0 transparent;
+           background-color: grey;
+           color: rgb(255, 255, 255);
+        }
+        input:focus{
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" fname="fname" placeholder="First Name" required>
+    <input type="text" mname="mname" placeholder="Middle Name">
+    <input type="text" lname="lname" placeholder="Last Name" required>
+    <input type="text" value="Address" disabled>
+    <input type="email" placeholder="Email" required>
+    <input type="number" placeholder="Age" min="18" max="60">
+    <input type="text" placeholder="Mrs." readonly>
+</body>
+</html>
