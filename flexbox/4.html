@@ -1,1 +1,186 @@
-dashboard 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+    .dashboard {
+        display: flex;
+        min-height: 100vh;
+    }
+    .sidebar {
+        width: 220px;
+        flex-shrink: 0;
+    }
+    .logo {
+        padding: 20px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        flex: 1;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .content {
+        padding: 20px;
+    }
+    .statistics {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .card {
+        flex: 1;
+    }
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .order-header,
+    .order {
+        display: flex;
+        align-items: center;
+    }
+    .order-header div,
+    .order div {
+        flex: 1;
+    }
+    footer {
+        padding: 20px;
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                Dashboard
+            </div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Users</a>
+                <a href="#">Products</a>
+                <a href="#">Orders</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div class="page-title">
+                    <h1>Dashboard Overview</h1>
+                </div>
+                <div class="profile">
+                    <span>🔔</span>
+                    <span>👤</span>
+                    <span>John Doe</span>
+                    <span>▼</span>
+                </div>
+            </header>
+            <div class="content">
+                <section class="statistics">
+                    <div class="card">
+                        <div class="card-icon">
+                            👥
+                        </div>
+                        <div class="card-content">
+                            <p>Users</p>
+                            <h2>1,245</h2>
+                            <span>↑ 12.5%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            🛍️
+                        </div>
+                        <div class="card-content">
+                            <p>Products</p>
+                            <h2>356</h2>
+                            <span>↑ 6.4%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            🛒
+                        </div>
+                        <div class="card-content">
+                            <p>Orders</p>
+                            <h2>789</h2>
+                            <span>↑ 5.7%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            ₹
+                        </div>
+                        <div class="card-content">
+                            <p>Revenue</p>
+                            <h2>₹2,45,000</h2>
+                            <span>↑ 20.1%</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="recent-orders">
+                    <h2>Recent Orders</h2>
+                    <div class="order-header">
+                        <div>Order ID</div>
+                        <div>Customer</div>
+                        <div>Date</div>
+                        <div>Amount</div>
+                        <div>Status</div>
+                    </div>
+                    <div class="order">
+                        <div>#10001</div>
+                        <div>Rahul Sharma</div>
+                        <div>20 May 2025</div>
+                        <div>₹1,250</div>
+                        <div>Delivered</div>
+                    </div>
+                    <div class="order">
+                        <div>#10002</div>
+                        <div>Priya Verma</div>
+                        <div>19 May 2025</div>
+                        <div>₹2,475</div>
+                        <div>Pending</div>
+                    </div>
+                    <div class="order">
+                        <div>#10003</div>
+                        <div>Amit Kumar</div>
+                        <div>18 May 2025</div>
+                        <div>₹799</div>
+                        <div>Shipped</div>
+                    </div>
+                    <div class="order">
+                        <div>#10004</div>
+                        <div>Neha Singh</div>
+                        <div>18 May 2025</div>
+                        <div>₹1,899</div>
+                        <div>Delivered</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                © 2025 Dashboard. All rights reserved.
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
