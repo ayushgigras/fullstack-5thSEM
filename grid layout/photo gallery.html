@@ -1,0 +1,68 @@
+<!-- Basic photo gallery using a four-column CSS Grid layout. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Photo Gallery</title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 0;
+         padding: 24px;
+         background-color: #f4f1ec;
+         font-family: Arial, sans-serif;
+      }
+
+      h1 {
+         margin: 0 0 24px;
+         color: #2f2925;
+         text-align: center;
+      }
+
+      .gallery {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+         gap: 16px;
+         max-width: 1100px;
+         margin: 0 auto;
+      }
+
+      .gallery-item {
+         min-height: 180px;
+         overflow: hidden;
+         border: 4px solid #ffffff;
+         border-radius: 8px;
+         background-position: center;
+         background-size: cover;
+         box-shadow: 0 3px 10px rgba(47, 41, 37, 0.18);
+         transition: transform 0.2s ease;
+      }
+
+      .gallery-item:hover {
+         transform: scale(1.03);
+      }
+
+   </style>
+</head>
+<body>
+   <h1>Photo Gallery</h1>
+   <main class="gallery" aria-label="Photo gallery">
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+   </main>
+</body>
+</html>
