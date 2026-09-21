@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FlowTask helps small teams plan, focus, and ship better work.">
+  <title>FlowTask | Work that moves</title>
+  <link rel="stylesheet" href="../dist/landing-page.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6" aria-label="Main navigation">
+      <a href="#top" class="flex items-center gap-2.5 text-[15px] font-bold tracking-[-0.02em]">
+        <span class="grid size-8 place-items-center rounded-[10px] bg-indigo-600 text-white shadow-sm shadow-indigo-200" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="size-[17px] fill-none stroke-current stroke-[2.2]"><path d="M7 4.8h7.4L18 8.4V19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5.8a1 1 0 0 1 1-1Z"/><path d="M14 4.8v4h4M8.5 13h7M8.5 16h5"/></svg>
+        </span>
+        FlowTask
+      </a>
+      <div class="hidden items-center gap-8 text-sm font-medium text-slate-500 sm:flex">
+        <a class="transition hover:text-indigo-600" href="#features">Features</a>
+        <a class="transition hover:text-indigo-600" href="#how-it-works">How it works</a>
+        <a class="transition hover:text-indigo-600" href="#pricing">Pricing</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#signin" class="hidden text-sm font-semibold text-slate-600 transition hover:text-indigo-600 sm:block">Sign in</a>
+        <a href="#start" class="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">Get started</a>
+        <button class="grid size-10 place-items-center rounded-lg border border-slate-200 text-slate-700 sm:hidden" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" class="size-5 fill-none stroke-current stroke-2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero-shell mx-auto grid min-h-[520px] max-w-[1200px] items-center gap-14 px-6 py-20 lg:grid-cols-[1fr_1.02fr] lg:gap-16 lg:py-16">
+      <div class="max-w-[650px]">
+        <p class="mb-5 text-sm font-semibold text-indigo-600">Project planning for small teams</p>
+        <h1 class="max-w-[590px] text-4xl font-bold leading-[1.1] tracking-[-0.045em] text-slate-900 sm:text-5xl">A simple place to keep work moving.</h1>
+        <p class="mt-5 max-w-[560px] text-base leading-7 text-slate-500 sm:text-lg sm:leading-[1.6]">FlowTask helps your team see what needs doing, decide who owns it, and get on with the work.</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a id="start" href="#features" class="inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-200 transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">Start for free <span aria-hidden="true">→</span></a>
+          <a href="#how-it-works" class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700">See how it works <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="mt-7 text-xs font-medium text-slate-400">Free for personal projects. No card required.</p>
+      </div>
+
+      <div class="relative lg:justify-self-end">
+        <div class="absolute -inset-5 -z-10 rounded-[32px] bg-indigo-100/60 blur-2xl"></div>
+        <div class="dashboard-window overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_24px_70px_-28px_rgba(15,23,42,0.35)]">
+          <div class="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+            <div class="flex items-center gap-2"><span class="size-2 rounded-full bg-rose-300"></span><span class="size-2 rounded-full bg-amber-300"></span><span class="size-2 rounded-full bg-emerald-300"></span></div>
+            <span class="text-[10px] font-semibold text-slate-400">Acme Studio / workspace</span>
+            <span class="size-5 rounded-full bg-slate-100"></span>
+          </div>
+          <div class="grid grid-cols-[108px_1fr] sm:grid-cols-[132px_1fr]">
+            <aside class="border-r border-slate-100 bg-slate-50/70 p-3 sm:p-4">
+              <div class="mb-8 flex items-center gap-2 text-[11px] font-bold"><span class="grid size-5 place-items-center rounded-md bg-indigo-600 text-[9px] text-white">F</span> FlowTask</div>
+              <div class="space-y-1 text-[10px] font-semibold text-slate-400"><div class="rounded-md bg-indigo-50 px-2.5 py-2 text-indigo-700">Overview</div><div class="px-2.5 py-2">My work</div><div class="px-2.5 py-2">Projects</div><div class="px-2.5 py-2">Team</div></div>
+              <div class="mt-14 border-t border-slate-200 pt-3 text-[9px] font-semibold text-slate-400"><div class="px-2.5 py-2">Settings</div><div class="px-2.5 py-2">Help center</div></div>
+            </aside>
+            <div class="min-w-0 p-4 sm:p-6">
+              <div class="flex items-start justify-between"><div><p class="text-[10px] font-medium text-slate-400">Tuesday, September 24</p><h2 class="mt-1 text-lg font-bold tracking-tight text-slate-800 sm:text-xl">This week</h2></div><span class="rounded-md border border-slate-200 px-2 py-1 text-[9px] font-semibold text-slate-500">All projects⌄</span></div>
+              <div class="mt-5 grid grid-cols-3 gap-2"><div class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"><p class="text-[9px] text-slate-400">Open tasks</p><p class="mt-1 text-base font-bold text-slate-800">24</p></div><div class="rounded-lg border border-slate-100 bg-slate-50 p-2.5"><p class="text-[9px] text-slate-400">In progress</p><p class="mt-1 text-base font-bold text-slate-800">08</p></div><div class="rounded-lg border border-slate-100 bg-indigo-50 p-2.5"><p class="text-[9px] text-indigo-400">Completed</p><p class="mt-1 text-base font-bold text-indigo-700">16</p></div></div>
+              <div class="mt-5 rounded-xl border border-slate-100 p-3 sm:p-4"><div class="flex items-center justify-between"><h3 class="text-[11px] font-bold text-slate-700">Weekly progress</h3><span class="text-[9px] font-semibold text-emerald-600">+18.4%</span></div><div class="mt-3 flex h-20 items-end gap-2 sm:h-24 sm:gap-3"><span class="chart-bar h-[38%]"></span><span class="chart-bar h-[55%]"></span><span class="chart-bar h-[45%]"></span><span class="chart-bar h-[68%]"></span><span class="chart-bar h-[58%]"></span><span class="chart-bar h-[82%] bg-indigo-500"></span><span class="chart-bar h-[74%]"></span></div><div class="mt-2 flex justify-between text-[8px] font-medium text-slate-400"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+              <div class="mt-4 flex items-center justify-between"><h3 class="text-[11px] font-bold text-slate-700">Up next</h3><span class="text-[9px] font-semibold text-indigo-600">View all</span></div>
+              <div class="mt-2 space-y-2"><div class="flex items-center gap-2 rounded-lg border border-slate-100 p-2"><span class="size-2 rounded-full bg-amber-400"></span><span class="min-w-0 flex-1 truncate text-[10px] font-semibold text-slate-600">Review product launch brief</span><span class="text-[9px] text-slate-400">Today</span></div><div class="flex items-center gap-2 rounded-lg border border-slate-100 p-2"><span class="size-2 rounded-full bg-emerald-400"></span><span class="min-w-0 flex-1 truncate text-[10px] font-semibold text-slate-600">Share sprint update</span><span class="text-[9px] text-slate-400">Wed</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="border-y border-slate-200/70 bg-white py-20">
+      <div class="mx-auto max-w-[1200px] px-6"><div class="max-w-xl"><p class="text-sm font-bold text-indigo-600">What you can do with it</p><h2 class="mt-3 text-3xl font-bold tracking-[-0.035em] text-slate-900">The useful bits, all in one place.</h2><p class="mt-4 text-base leading-7 text-slate-500">Keep the plan, the details, and the next step together so nobody has to ask for an update.</p></div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="feature-card"><span class="icon-tile bg-indigo-50 text-indigo-600"><svg viewBox="0 0 24 24" class="size-5 fill-none stroke-current stroke-2"><path d="M5 19V9m7 10V5m7 14v-7"/></svg></span><h3>Plan the week</h3><p>Put deadlines, tasks, and the important context where the whole team can find them.</p><a href="#start">See planning <span>→</span></a></article>
+          <article class="feature-card"><span class="icon-tile bg-amber-50 text-amber-600"><svg viewBox="0 0 24 24" class="size-5 fill-none stroke-current stroke-2"><path d="M7 12h10M12 7v10M5 5h14v14H5z"/></svg></span><h3>Share the details</h3><p>Keep notes, files, and decisions beside the task instead of spread across chats.</p><a href="#start">See projects <span>→</span></a></article>
+          <article class="feature-card"><span class="icon-tile bg-emerald-50 text-emerald-600"><svg viewBox="0 0 24 24" class="size-5 fill-none stroke-current stroke-2"><path d="m5 12 4 4L19 6"/></svg></span><h3>Know what is done</h3><p>Simple updates make it easy to spot stuck work and finish the things you started.</p><a href="#start">See workflows <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-2 md:items-center"><div><p class="text-sm font-bold text-indigo-600">How a project gets done</p><h2 class="mt-3 max-w-md text-3xl font-bold tracking-[-0.035em]">Enough structure to stay on track.</h2><p class="mt-5 max-w-md text-base leading-7 text-slate-500">Start with a short list, keep the conversation nearby, and close out the week knowing what actually moved.</p></div><div class="grid gap-3 sm:grid-cols-3 md:grid-cols-1"><div class="step-row"><span>01</span><div><h3>Make a short plan</h3><p>Choose the few things that need attention first.</p></div></div><div class="step-row"><span>02</span><div><h3>Work in the open</h3><p>Post updates where the task already lives.</p></div></div><div class="step-row"><span>03</span><div><h3>Wrap up the week</h3><p>Mark the finished work and carry forward the rest.</p></div></div></div></section>
+  </main>
+
+  <footer id="pricing" class="border-t border-slate-200 bg-white"><div class="mx-auto flex max-w-[1200px] flex-col gap-4 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between"><span class="font-bold text-slate-800">FlowTask</span><span>Simple work management for thoughtful teams.</span><span id="signin">© 2026 FlowTask</span></div></footer>
+</body>
+</html>
