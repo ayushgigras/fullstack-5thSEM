@@ -222,23 +222,6 @@
         </main>
     </div>
 
-    <script>
-        const menuButton = document.getElementById("menu-button");
-        const sidebar = document.getElementById("sidebar");
-        const overlay = document.getElementById("sidebar-overlay");
-        const addReportButton = document.getElementById("add-report-button");
-
-        function toggleSidebar() {
-            const isOpen = sidebar.classList.toggle("is-open");
-            overlay.classList.toggle("hidden", !isOpen);
-        }
-
-        menuButton.addEventListener("click", toggleSidebar);
-        overlay.addEventListener("click", () => sidebar.classList.remove("is-open"));
-        addReportButton.addEventListener("click", () => {
-            addReportButton.textContent = "Report added";
-        });
-    </script>
 </body>
 
 </html>
